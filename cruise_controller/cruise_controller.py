@@ -39,11 +39,13 @@ while t < 30:
     t=t+dt
     
 print("min error is ",((min(error))))
-plt.plot(time,rlist)
+# plt.plot(time,rlist)
 
-plt.plot(time,error)
+# plt.plot(time,error)
 plt.plot(time,velocity)
 plt.xlabel("Time ")
-plt.ylabel("Velocity & error")
+# plt.ylabel("Error")
+plt.ylabel("Velocity")
+# plt.legend(["Error","Velocity"])
 
 plt.show()
